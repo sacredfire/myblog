@@ -6,7 +6,7 @@ class Post(models.Model):
     class Meta:
         verbose_name = "post"
         verbose_name_plural = "posts"
-    authour = models.ForeignKey('auth.User')
+    author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=100)
     text = models.TextField()
     date_created = models.DateTimeField(default=timezone.now)
